@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js" integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+        <div class="con-left">
+            <form action="">
+                <div class="content">
+                <label for="typurl">Enter website link</label>
+                <input type="text" class="typurl" placeholder="Enter Your URL">
+                </div>
+
+                <div class="content">
+                <label for="size">Select Your Size</label>
+                <select id="qrsize">
+                <option value="100">100x100</option>
+                <option value="200">200x200</option>
+                <option value="300">300x300</option>
+                <option value="400">400x400</option>
+            </select>
+                
+                </div>
+                
+                <div class="content">
+                    <label for="darkclr">Select Your Size</label>
+                    <input type="color" class="darkclr">
+                </div>
+
+                <div class="content">
+                    <label for="lightclr">Select Your Size</label>
+                    <input type="color" class="lightclr" value="#ffffff">
+                </div>
+
+                <div class="content">
+                    <button class="qrgenerator" type="submit">Generate QR code</button>
+                </div>
+
+                <div class="content">
+                    <a href="#" class="saveqr">Save QR code</a>
+                </div>
+
+            </form>
+        </div>
+        <div class="con-right">
+            <div class="qrimg"></div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
